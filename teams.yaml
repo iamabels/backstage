@@ -8,6 +8,7 @@ spec:
   profile:
     displayName: Financial Orchestration
   parent: customer-finanace
+  children: []
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Group
@@ -19,3 +20,4 @@ spec:
   profile:
     displayName: Attract
   parent: customer-finanace
+  children: []
