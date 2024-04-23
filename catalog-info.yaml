@@ -26,6 +26,8 @@ metadata:
   description: Customer Finance
 spec:
   type: department
+  profile:
+    displayName: Customer Finanace
   parent: financial-services
   children: [attract, forc]
   
