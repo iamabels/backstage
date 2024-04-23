@@ -20,4 +20,25 @@ spec:
     displayName: Customer Finanace
   parent: financial-services
   children: [attract, forc]
-  
+---
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: forc
+  description: Financial Orchestration
+spec:
+  type: team
+  profile:
+    displayName: Financial Orchestration
+  parent: customer-finanace
+---
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: attract
+  description: Attract
+spec:
+  type: team
+  profile:
+    displayName: Attract
+  parent: customer-finanace
