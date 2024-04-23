@@ -1,0 +1,7 @@
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: forc-team
+  description: Financial Orchestration Team
+spec:
+  type: team
