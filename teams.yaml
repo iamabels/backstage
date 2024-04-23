@@ -1,23 +1,23 @@
 apiVersion: backstage.io/v1alpha1
 kind: Group
 metadata:
-  name: forc
-  description: Financial Orchestration
+  name: forc-team
+  description: Financial Orchestration Team
 spec:
   type: team
   profile:
-    displayName: Financial Orchestration
+    displayName: Financial Orchestration Team
   parent: customer-finanace
   children: []
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Group
 metadata:
-  name: attract
-  description: Attract
+  name: attract-team
+  description: Attract Team
 spec:
   type: team
   profile:
-    displayName: Attract
+    displayName: Attract Team
   parent: customer-finanace
   children: []
