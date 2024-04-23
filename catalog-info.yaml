@@ -10,18 +10,6 @@ spec:
   children: [customer-finance]
 ---
 apiVersion: backstage.io/v1alpha1
-kind: Location
-metadata:
-  name: customer-finanace-teams
-  description: Customer Finance teams
-spec:
-  profile:
-    displayName: Customer Finanace
-  targets:
-    - ./forc-group.yaml
-    - ./attract-group.yaml
----
-apiVersion: backstage.io/v1alpha1
 kind: Group
 metadata:
   name: customer-finanace
