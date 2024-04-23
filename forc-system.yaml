@@ -1,0 +1,7 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: forc-system
+  description: Financial Orchestration System
+spec:
+  owner: forc-team
