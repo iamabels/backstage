@@ -1,33 +1,31 @@
 apiVersion: backstage.io/v1alpha1
 kind: Group
 metadata:
-  name: acme-corp
-  description: The acme-corp organization
-  links:
-    - url: http://www.acme.com/
-      title: Website
-    - url: https://meta.wikimedia.org/wiki/
-      title: Intranet
+  name: financial-services
+  description: Financial Services
 spec:
   type: organization
   profile:
-    displayName: ACME Corp
-    email: info@example.com
-    picture: https://api.dicebear.com/7.x/identicon/svg?seed=Maggie&flip=true&backgroundColor=ffdfbf
-  children: [infrastructure]
+    displayName: Financial Services
+  children: [customer-finance]
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Location
 metadata:
-  name: example-groups
-  description: A collection of all Backstage example Groups
+  name: customer-finanace-teams
+  description: Customer Finance teams
 spec:
   targets:
-    - ./infrastructure-group.yaml
-    - ./boxoffice-group.yaml
-    - ./backstage-group.yaml
-    - ./team-a-group.yaml
-    - ./team-b-group.yaml
-    - ./team-c-group.yaml
-    - ./team-d-group.yaml
-    
+    - ./forc-group.yaml
+    - ./attract-group.yaml
+---
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: customer-finanace
+  description: Customer Finance
+spec:
+  type: department
+  parent: financial-services
+  children: [attract, forc]
+  
