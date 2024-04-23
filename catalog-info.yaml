@@ -19,4 +19,4 @@ spec:
   profile:
     displayName: Customer Finanace
   parent: financial-services
-  children: [attract, forc]
+  children: [attract-team, forc-team]
